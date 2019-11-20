@@ -1,0 +1,47 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+padding: 10em;
+align-items: center;
+}
+
+.box {
+    width: 25em;
+    height: 20em;
+    background: linear-gradient( blue, rgb(225, 237, 248) );
+    transition: opacity 0.8s ease-in, transform 0.3s ease-in;
+    opacity: 0.5;
+    position: relative;
+    
+}
+
+.box:hover {
+    width: 25em;
+    height: 20em;
+    background: linear-gradient( orange, rgb(252, 227, 147) );
+    opacity: 0.5;
+    transition: opacity 0.8s ease-in, transform 0.3s ease-in;
+    position: absolute;
+    
+}
+
+@keyframes change {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
